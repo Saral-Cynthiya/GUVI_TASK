@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Voice Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI-Generated Voice Detection</h1>
+    <p class="subtitle">
+        Detect whether a voice sample is AI-generated or Human-generated
+        (Tamil, English, Hindi, Malayalam, Telugu)
+    </p>
+
+    <div class="upload-box">
+        <input type="file" id="audioFile" accept=".mp3,.wav">
+        <button onclick="analyzeVoice()">Analyze Voice</button>
+    </div>
+
+    <div id="result" class="result hidden">
+        <h2>Result</h2>
+        <p><strong>Classification:</strong> <span id="classification"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+        <p><strong>Explanation:</strong> <span id="explanation"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
